@@ -19,7 +19,7 @@ export const Modal = () => {
         <div className="flex flex-col items-center p-2">
           <h1 className="text-2xl font-medium">Done!</h1>
           <p className="text-base mt-5">
-            Thanks for reaching out! I'll get back to you as soon as possible.
+            Thanks for reaching out! I&apos;ll get back to you as soon as possible.
           </p>
         </div>
       </div>

@@ -64,13 +64,13 @@ const Home: NextPage = () => {
         <div className="mt-12">
           <h2 className="font-bold text-2xl">About Me</h2>
           <p className="mt-4">
-            Hi, my name is Amal. I am 25 years old front-end developer who's
+            Hi, my name is Amal. I am 25 years old front-end developer who&apos;s
             always interested in trying out new tech and solving interesting
             problems. I also have an eye for security and try to reduce the
             attack surfaces as low as possible.I graduated from the University
-            of Calicut in 2020 with Bachelor's degree in computer science.
+            of Calicut in 2020 with Bachelor&apos;s degree in computer science.
             <br /> At work, I build and maintain internal tools for our clients
-            and sometimes work with our client's teams to help them with their
+            and sometimes work with our client&apos;s teams to help them with their
             projects. <br /> Apart from this, I like to tinger with Android and
             learn about its internal working. I also love to make some quirky
             Android apps that meet my specific requirements.
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
             </li>
             <li className="py-1">
               Build browser extensions using React and TypeScript for the
-              client's team, which doubled their workflow speed
+              client&apos;s team, which doubled their workflow speed
             </li>
             <li className="py-1">
               Helped the team to get up to speed in testing React applications
@@ -142,13 +142,13 @@ const Home: NextPage = () => {
             <li className="py-1">
               Communicate with clients and other engineering teams daily
             </li>
-            <li className="py-1">Deploy and manage client's cloud servers</li>
+            <li className="py-1">Deploy and manage client&apos;s cloud servers</li>
           </ul>
         </div>
 
         {/* Projects section */}
         <div className="mt-12">
-          <h2 className="font-bold text-2xl">Some Things I've Built</h2>
+          <h2 className="font-bold text-2xl">Some Things I&apos;ve Built</h2>
 
           <div className="mt-12 flex flex-wrap justify-center w-full gap-x-5 gap-y-7">
             <Card className="w-full md:w-1/3 p-3">
