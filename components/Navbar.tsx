@@ -39,7 +39,9 @@ export const Navbar = () => {
               <a href="#contact">Contact</a>
             </li>
             <li className="p-1 hover:bg-gray-300 cursor-pointer">
-              <a href="#about">Resume</a>
+              <a href="/files/Amal-Resume.pdf" target="_blank">
+                Resume
+              </a>
             </li>
           </ul>
         </nav>
@@ -61,7 +63,9 @@ export const Navbar = () => {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#about">Resume</a>
+            <a href="/files/Amal-Resume.pdf" target="_blank">
+              Resume
+            </a>
           </li>
         </ul>
       </nav>
