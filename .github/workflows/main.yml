@@ -33,7 +33,8 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           username: ${{secrets.SSH_USERNAME}}
           script: |
-            cd protfolio
+            cd /root/portfolio
+            pwd
             git pull
             yarn
             yarn build
