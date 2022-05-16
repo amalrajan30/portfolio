@@ -186,6 +186,7 @@ const Home: NextPage = () => {
               </CardBody>
               <CardFooter>
                 <a
+                  aria-label="check out the project"
                   target="_blank"
                   rel="noreferrer"
                   href="https://typing-test-hrz.pages.dev"
@@ -199,6 +200,7 @@ const Home: NextPage = () => {
                   </span>
                 </a>
                 <a
+                  aria-label="go to the github repo"
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/amalrajan30/typing-test"
@@ -224,6 +226,7 @@ const Home: NextPage = () => {
               <CardFooter>
                 {/* <a className="btn hover:cursor-pointer">Check it out</a> */}
                 <a
+                  aria-label="go to the github repo"
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/amalrajan30/sleep-tracker"
@@ -248,6 +251,7 @@ const Home: NextPage = () => {
               </CardBody>
               <CardFooter>
                 <a
+                  aria-label="check out the project"
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.npmjs.com/package/kindle-highlight"
@@ -261,6 +265,7 @@ const Home: NextPage = () => {
                   </span>
                 </a>
                 <a
+                  aria-label="go to the github repo"
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/amalrajan30/kindle-highlight"

@@ -12,6 +12,7 @@ export const Navbar = () => {
           type="button"
           className="w-6"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? (
             <FontAwesomeIcon icon={faXmark} />
