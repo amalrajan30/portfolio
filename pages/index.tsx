@@ -7,8 +7,42 @@ import { Card, CardBody, CardFooter, CardHeader } from "../components/Card";
 import { Navbar } from "../components/Navbar";
 import styles from "../styles/Home.module.css";
 import { Modal } from "../components/Modal";
+import { useState } from "react";
 
 const Home: NextPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [contactName, setContactName] = useState("");
+  const [contactEmail, setContactEmail] = useState("");
+  const [contactMessage, setContactMessage] = useState("");
+
+  const onContactSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("onContactSubmit");
+    if (contactName === "" || contactEmail === "" || contactMessage === "") {
+      alert("Please fill out all fields");
+      return;
+    }
+    try {
+      await fetch("/api/hello", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: contactName,
+          email: contactEmail,
+          message: contactMessage,
+        }),
+      });
+      setIsOpen(true);
+      setContactName("");
+      setContactEmail("");
+      setContactMessage("");
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -291,7 +325,7 @@ const Home: NextPage = () => {
 
             <Card className="mt-4 hover:scale-100">
               <CardBody>
-                <form>
+                <form onSubmit={onContactSubmit}>
                   <div className="flex flex-wrap gap-x-4 gap-y-4">
                     <div className="w-full">
                       <label
@@ -306,6 +340,8 @@ const Home: NextPage = () => {
                         required
                         className="form-input mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out"
                         placeholder="Enter your name"
+                        value={contactName}
+                        onChange={(e) => setContactName(e.target.value)}
                       />
                     </div>
                     <div className="w-full">
@@ -321,6 +357,8 @@ const Home: NextPage = () => {
                         required
                         className="form-input mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out"
                         placeholder="Enter your email"
+                        value={contactEmail}
+                        onChange={(e) => setContactEmail(e.target.value)}
                       />
                     </div>
                     <div className="w-full">
@@ -336,6 +374,8 @@ const Home: NextPage = () => {
                         required
                         className="form-textarea mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out"
                         placeholder="Enter your message"
+                        value={contactMessage}
+                        onChange={(e) => setContactMessage(e.target.value)}
                       />
                     </div>
                   </div>
@@ -343,9 +383,6 @@ const Home: NextPage = () => {
                     <button
                       type="submit"
                       className="btn hover:cursor-pointer w-full"
-                      onClick={() => {
-                        alert("Message sent successfully!");
-                      }}
                     >
                       Send
                     </button>
@@ -356,7 +393,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <Modal />
+        <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </main>
 
       <footer className="mt-20 p-6">

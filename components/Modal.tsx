@@ -2,8 +2,12 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
-export const Modal = () => {
-  const [isOpen, setIsOpen] = useState(false);
+interface ModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
+
+export const Modal = ({isOpen, onClose}: ModalProps) => {
   return isOpen ? (
     <div className="w-full h-full left-0 top-0 fixed z-10 bg-gray-300/60 flex items-center justify-center">
       <div className="p-4 w-1/3 shadow-lg rounded bg-white">
@@ -11,7 +15,7 @@ export const Modal = () => {
           <button
             type="button"
             className="w-fit"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={onClose}
           >
             <FontAwesomeIcon width={12} icon={faXmark} />
           </button>
