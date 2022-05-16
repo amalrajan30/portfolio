@@ -55,7 +55,7 @@ const Home: NextPage = () => {
             GitHub
           </a>
           <a
-            href="https://github.com/amalrajan30"
+            href="https://www.linkedin.com/in/amal-rajan/"
             target={"_blank"}
             rel="noreferrer"
           >
@@ -76,12 +76,12 @@ const Home: NextPage = () => {
             className="mt-10 border-blue-500 border rounded py-2 px-10
           hover:bg-blue-500 hover:text-white"
           >
-            <a href="mailto:amalrajan30@gmail.com">Contact Me</a>
+            <a href="#contact">Contact Me</a>
           </button>
         </div>
 
         {/* About section */}
-        <div className="mt-12">
+        <section id="about" className="mt-12">
           <h2 className="font-bold text-2xl">About Me</h2>
           <p className="mt-4">
             Hi, my name is Amal. I am 25 years old front-end developer
@@ -114,10 +114,10 @@ const Home: NextPage = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Experience section */}
-        <div className="mt-12">
+        <section id="experience" className="mt-12">
           <h2 className="font-bold text-2xl">Experience</h2>
           <h3 className="mt-3 text-lg">
             <span className="font-bold">Software Engineer</span>
@@ -167,10 +167,10 @@ const Home: NextPage = () => {
               Deploy and manage client&apos;s cloud servers
             </li>
           </ul>
-        </div>
+        </section>
 
         {/* Projects section */}
-        <div className="mt-12">
+        <section id="projects" className="mt-12">
           <h2 className="font-bold text-2xl">Some Things I&apos;ve Built</h2>
 
           <div className="mt-12 flex flex-wrap justify-center w-full gap-x-5 gap-y-7">
@@ -185,7 +185,12 @@ const Home: NextPage = () => {
                 </p>
               </CardBody>
               <CardFooter>
-                <a className="btn border-none hover:cursor-pointer flex items-center max-h-10">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://typing-test-hrz.pages.dev"
+                  className="btn border-none hover:cursor-pointer flex items-center max-h-10"
+                >
                   <span>
                     <FontAwesomeIcon
                       width={16}
@@ -193,7 +198,12 @@ const Home: NextPage = () => {
                     />
                   </span>
                 </a>
-                <a className="btn border-none hover:cursor-pointer flex items-center max-h-10">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/amalrajan30/typing-test"
+                  className="btn border-none hover:cursor-pointer flex items-center max-h-10"
+                >
                   <span>
                     <FontAwesomeIcon width={16} icon={faGithub} />
                   </span>
@@ -213,7 +223,12 @@ const Home: NextPage = () => {
               </CardBody>
               <CardFooter>
                 {/* <a className="btn hover:cursor-pointer">Check it out</a> */}
-                <a className="btn border-none hover:cursor-pointer max-h-10">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/amalrajan30/sleep-tracker"
+                  className="btn border-none hover:cursor-pointer max-h-10"
+                >
                   <span>
                     <FontAwesomeIcon width={16} icon={faGithub} />
                   </span>
@@ -232,7 +247,12 @@ const Home: NextPage = () => {
                 </p>
               </CardBody>
               <CardFooter>
-                <a className="btn border-none hover:cursor-pointer max-h-10">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.npmjs.com/package/kindle-highlight"
+                  className="btn border-none hover:cursor-pointer max-h-10"
+                >
                   <span>
                     <FontAwesomeIcon
                       width={16}
@@ -240,7 +260,12 @@ const Home: NextPage = () => {
                     />
                   </span>
                 </a>
-                <a className="btn border-none hover:cursor-pointer">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/amalrajan30/kindle-highlight"
+                  className="btn border-none hover:cursor-pointer"
+                >
                   <span>
                     <FontAwesomeIcon width={16} icon={faGithub} />
                   </span>
@@ -248,10 +273,10 @@ const Home: NextPage = () => {
               </CardFooter>
             </Card>
           </div>
-        </div>
+        </section>
 
         {/* Contact section */}
-        <div className="mt-12">
+        <section id="contact" className="mt-12">
           <h2 className="font-bold text-2xl">Contact</h2>
           <div className="mt-4">
             <p>
@@ -324,7 +349,7 @@ const Home: NextPage = () => {
               </CardBody>
             </Card>
           </div>
-        </div>
+        </section>
 
         <Modal />
       </main>
@@ -349,7 +374,9 @@ const Home: NextPage = () => {
             </span>
             <span className="text-gray-500"> | </span>
             <span>
-              <a href="">Edit this page on GitHub</a>
+              <a href="https://github.com/amalrajan30/portfolio/blob/main/pages/index.tsx">
+                Edit this page on GitHub
+              </a>
             </span>
           </p>
         </div>

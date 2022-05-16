@@ -30,13 +30,13 @@ export const Navbar = () => {
               <a href="#about">About</a>
             </li>
             <li className="p-1 hover:bg-gray-300 cursor-pointer">
-              <a href="#about">Experience</a>
+              <a href="#experience">Experience</a>
             </li>
             <li className="p-1 hover:bg-gray-300 cursor-pointer">
-              <a href="#about">Work</a>
+              <a href="#projects">Work</a>
             </li>
             <li className="p-1 hover:bg-gray-300 cursor-pointer">
-              <a href="#about">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li className="p-1 hover:bg-gray-300 cursor-pointer">
               <a href="#about">Resume</a>
@@ -52,13 +52,13 @@ export const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#about">Experience</a>
+            <a href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#about">Work</a>
+            <a href="#projects">Work</a>
           </li>
           <li>
-            <a href="#about">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             <a href="#about">Resume</a>
