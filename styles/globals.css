@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .btn {
+    border: 1px solid theme("colors.gray.200");
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+  }
+  .btn:hover {
+    background-color: theme("colors.gray.100");
+  }
+
+  .card {
+    border: 1px solid theme("colors.gray.200");
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+}
