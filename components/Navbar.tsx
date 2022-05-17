@@ -24,23 +24,35 @@ export const Navbar = () => {
         <nav
           className={`${
             isOpen ? "opacity-100 h-auto overflow-hidden" : "opacity-0 h-0"
-          } w-full transition-all duration-300`}
+          } w-full transition-all duration-300 ease-in-out`}
         >
           <ul className="text-lg font-medium">
-            <li className="p-1 hover:bg-gray-300 cursor-pointer">
-              <a href="#about">About</a>
+            <li className="p-1 hover:bg-gray-300 text-center cursor-pointer">
+              <a className="w-full h-full inline-block" href="#about">
+                About
+              </a>
             </li>
-            <li className="p-1 hover:bg-gray-300 cursor-pointer">
-              <a href="#experience">Experience</a>
+            <li className="p-1 hover:bg-gray-300 text-center cursor-pointer">
+              <a className="w-full h-full inline-block" href="#experience">
+                Experience
+              </a>
             </li>
-            <li className="p-1 hover:bg-gray-300 cursor-pointer">
-              <a href="#projects">Work</a>
+            <li className="p-1 hover:bg-gray-300 text-center cursor-pointer">
+              <a className="w-full h-full inline-block" href="#projects">
+                Work
+              </a>
             </li>
-            <li className="p-1 hover:bg-gray-300 cursor-pointer">
-              <a href="#contact">Contact</a>
+            <li className="p-1 hover:bg-gray-300 text-center cursor-pointer">
+              <a className="w-full h-full inline-block" href="#contact">
+                Contact
+              </a>
             </li>
-            <li className="p-1 hover:bg-gray-300 cursor-pointer">
-              <a href="/files/Amal-Resume.pdf" target="_blank">
+            <li className="p-1 hover:bg-gray-300 text-center cursor-pointer">
+              <a
+                className="w-full h-full inline-block"
+                href="/files/Amal-Resume.pdf"
+                target="_blank"
+              >
                 Resume
               </a>
             </li>

@@ -412,7 +412,8 @@ const Home: NextPage = () => {
               >
                 Tailwind CSS
               </a>{" "}
-              and <span className="text-red-500">❤</span> by <a href="">Amal</a>
+              and <span className="text-red-500">❤</span> by{" "}
+              <a href="https://amalrajan.dev">Amal</a>
             </span>
             <span className="text-gray-500"> | </span>
             <span>
