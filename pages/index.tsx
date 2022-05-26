@@ -51,6 +51,30 @@ const Home: NextPage = () => {
           name="description"
           content="Hi, I'm Amal a Fontend Engineer specialized in JavaScript, React and TypeScript"
         />
+        <meta
+          name="og:title"
+          content="Amal Rajan"
+          key="title"
+          property="og:title"
+        />
+        <meta
+          name="og:description"
+          content="Hi, I'm Amal a Fontend Engineer specialized in JavaScript, React and TypeScript"
+          key="description"
+          property="og:description"
+        />
+        <meta
+          name="og:image"
+          content="/android-chrome-512x512.png"
+          key="image"
+          property="og:image"
+        />
+        <meta
+          name="og:url"
+          content="https://amalrajan.dev"
+          key="url"
+          property="og:url"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
